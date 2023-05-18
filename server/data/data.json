@@ -38,11 +38,11 @@
     },
     {
       "id": 5,
-      "placeName": "m",
-      "country": "m",
+      "placeName": "Entalula Island",
+      "country": "Philippines",
       "image": "/images/PI.jpg",
-      "currency": "m",
-      "language": "m",
+      "currency": "Philippines Peso",
+      "language": "Filipino",
       "description": "m"
     }
   ]

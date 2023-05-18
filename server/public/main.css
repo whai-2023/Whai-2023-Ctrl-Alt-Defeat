@@ -26,23 +26,26 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 50px;
+  font-size: 20px;
 }
 
 .img-circle {
   border-radius: 50%;
   object-fit: cover;
-  width: 230px;
-  height: 230px;
+  width: 400px;
+  height: 400px;
   margin-bottom: 30px;
 }
 
 .title {
   text-align: center;
+  font-size: 50px;
 }
 
 .nav {
   text-align: center;
   color: black;
+  font-size: 20px;
 }
 
 .form {
@@ -50,4 +53,9 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: 'Roboto', sans-serif;
+}
+
+#where {
+  font-size: 35px;
+  margin-top: 0px;
 }
