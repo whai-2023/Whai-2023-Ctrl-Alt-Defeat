@@ -72,3 +72,16 @@ body {
   align-items: center;
   margin-bottom: 10px;
 }
+
+header, footer {
+  
+  text-align: center;
+  margin-right: 450px;
+  margin-left: 450px;
+  font-size: 25px;
+  font-family:cursive
+}
+.dscrpt {
+  margin-right: 450px;
+  margin-left: 450px;
+}
