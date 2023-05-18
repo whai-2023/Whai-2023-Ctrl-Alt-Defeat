@@ -1,7 +1,7 @@
 {
   "places": [
     {
-      "placeName": "Mathias",
+      "placeName": "plantation island",
       "country": "Fiji",
       "image": "/images/fiji-islands.jpeg",
       "currency": "Fijian Dollar",
@@ -11,10 +11,10 @@
     {
       "placeName": "Renee",
       "country": "Greece",
-      "image": "/images/navagio-beach.jpeg",
+      "image": "/images/paros.jpeg",
       "currency": "Euro",
       "language": "Greek",
-      "description": "??????????????"
+      "description": "The island of Paros is located in the Cyclades that is close to Santorini, Naxos and Mykonos. It is known for its turquoise blue waters and traditional island life. Scuba diving and sailing tours are popular activities and the food is amazing!    "
     },
     {
       "placeName": "Teri",
@@ -39,6 +39,14 @@
       "currency": "Philippine Peso",
       "language": "Filipino",
       "description": "Entalula Island is one of the beautiful islands in the Bacuit Archipelago, which is part of the El Nido area. It features picturesque landscapes, white sandy beaches, and vibrant marine life, making it a popular spot for island hopping and snorkeling activities."
+    },
+    {
+      "placeName": "Mathias' & Martin's Favorite Place",
+      "country": "Mars",
+      "image": "/images/mars.jpg",
+      "currency": "Bacon",
+      "language": "Klingon",
+      "description": "The landscape is a surreal spectacle. The mountains are shaped like enormous juggling balls, and the rivers flow with bubbling laughter instead of water. The trees don't just sway in the wind; they break out into spontaneous dance numbers, inviting anyone nearby to join in."
     }
   ]
 }
