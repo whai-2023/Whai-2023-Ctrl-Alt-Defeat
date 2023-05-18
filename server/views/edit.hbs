@@ -1,13 +1,9 @@
 
 
-<form class="form" action="/places/{{id}}/edit" method="post">
+<form class="form" action="/places/{{placeName}}/edit" method="post">
   <img class="img-circle" src="{{image}}" alt="{{name}}">
 
-  
-  <label for="placeName" class="form-item">
-    Place Name:
-    <input type="text" name="placeName" value="{{placeName}}">
-  </label>
+<h2 id="formPlaceName">{{placeName}}</h2>
   
   <label for="country" class="form-item">
     Country:

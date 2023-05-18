@@ -1,8 +1,7 @@
 {
   "places": [
     {
-      "id": 1,
-      "placeName": "Mathias",
+      "placeName": "plantation island",
       "country": "Fiji",
       "image": "/images/fiji-islands.jpeg",
       "currency": "Fijian Dollar",
@@ -10,40 +9,44 @@
       "description": "??????????????"
     },
     {
-      "id": 2,
       "placeName": "Renee",
       "country": "Greece",
-      "image": "/images/navagio-beach.jpeg",
+      "image": "/images/paros_.jpeg",
       "currency": "Euro",
       "language": "Greek",
-      "description": "??????????????"
+      "description": "The island of Paros is located in the Cyclades that is close to Santorini, Naxos and Mykonos. It is known for its turquoise blue waters and traditional island life. Scuba diving and sailing tours are popular activities and the food is amazing!    "
     },
     {
-      "id": 3,
       "placeName": "Teri",
       "country": "New Zealand",
       "image": "/images/NZ-Queenstown.jpg",
       "currency": "NZ Dollar",
       "language": "Maori/English",
-      "description": "??????????????"
+      "description": "Queenstown, New Zealand is a city in the South Island of New Zealand. With there beautiful mountain ranges and scenic views of the lake, it is one of the most beautiful places in New Zealand. With ample activities such as skiing and bungy jumping, you will never run out of thing to do!"
     },
     {
-      "id": 4,
-      "placeName": "Euan",
+      "placeName": "Nias",
       "country": "Indonesia",
-      "image": "/images/Uluwatu.jpg",
+      "image": "/images/nias-indo-barrel.jpg",
       "currency": "Rupiah",
       "language": "Bahasa Indonesia",
-      "description": "??????????????"
+      "description": "The beautiful island of Nias is located off the Western peninsula of Sumatra. On the south-west side of the island is Sorake bay where you will find the world famous wave dubbed 'the machine' for its consistent high quality waves."
     },
     {
-      "id": 5,
       "placeName": "Entalula Island",
       "country": "Philippines",
       "image": "/images/PI.jpg",
-      "currency": "Philippines Peso",
+      "currency": "Philippine Peso",
       "language": "Filipino",
       "description": "Entalula Island is one of the beautiful islands in the Bacuit Archipelago, which is part of the El Nido area. It features picturesque landscapes, white sandy beaches, and vibrant marine life, making it a popular spot for island hopping and snorkeling activities."
+    },
+    {
+      "placeName": "Mathias' & Martin's Favorite Place",
+      "country": "Mars",
+      "image": "/images/mars.jpg",
+      "currency": "Bacon",
+      "language": "Klingon",
+      "description": "The landscape is a surreal spectacle. The mountains are shaped like enormous juggling balls, and the rivers flow with bubbling laughter instead of water. The trees don't just sway in the wind; they break out into spontaneous dance numbers, inviting anyone nearby to join in."
     }
   ]
 }

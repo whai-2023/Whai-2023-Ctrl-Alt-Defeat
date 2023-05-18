@@ -63,3 +63,14 @@ body {
   font-size: 35px;
   margin-top: 0px;
 }
+
+#formPlaceName {
+  font-family: 'Spirax', cursive;
+}
+
+.audio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
