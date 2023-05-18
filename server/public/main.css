@@ -1,5 +1,7 @@
 body {
-  background-color: #68a5f5;
+  background-image: url('./images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Spirax', cursive;
 }
 
