@@ -1,39 +1,49 @@
 {
-  "puppies": [
+  "places": [
     {
       "id": 1,
-      "name": "Fido",
-      "owner": "Fred",
+      "placeName": "Mathias",
+      "country": "Fiji",
       "image": "/images/fiji-islands.jpeg",
-      "breed": "Labrador"
+      "currency": "Fijian Dollar",
+      "language": "Fijian",
+      "description": "??????????????"
     },
     {
       "id": 2,
-      "name": "Coco",
-      "owner": "Chloe",
+      "placeName": "Renee",
+      "country": "Greece",
       "image": "/images/navagio-beach.jpeg",
-      "breed": "Labrador"
+      "currency": "Euro",
+      "language": "Greek",
+      "description": "??????????????"
     },
     {
       "id": 3,
-      "name": "Magnum",
-      "owner": "Michael",
+      "placeName": "Teri",
+      "country": "New Zealand",
       "image": "/images/NZ-Queenstown.jpg",
-      "breed": "Rottweiler"
+      "currency": "NZ Dollar",
+      "language": "Maori/English",
+      "description": "??????????????"
     },
     {
       "id": 4,
-      "name": "Sadie",
-      "owner": "Sam",
+      "placeName": "Euan",
+      "country": "Indonesia",
       "image": "/images/Uluwatu.jpg",
-      "breed": "Labrador"
+      "currency": "Rupiah",
+      "language": "Bahasa Indonesia",
+      "description": "??????????????"
     },
     {
       "id": 5,
-      "name": "Murphy",
-      "owner": "Matthew",
+      "placeName": "m",
+      "country": "m",
       "image": "/images/PI.jpg",
-      "breed": "Pug"
+      "currency": "m",
+      "language": "m",
+      "description": "m"
     }
   ]
 }

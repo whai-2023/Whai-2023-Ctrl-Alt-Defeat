@@ -1,18 +1,32 @@
-<form class="form" action="/puppies/{{id}}/edit" method="post">
+
+
+<form class="form" action="/places/{{id}}/edit" method="post">
   <img class="img-circle" src="{{image}}" alt="{{name}}">
-  <label for="name" class="form-item">
-    Name:
-    <input type="text" name="name" value="{{name}}">
+
+  
+  <label for="placeName" class="form-item">
+    Place Name:
+    <input type="text" name="placeName" value="{{placeName}}">
   </label>
   
-  <label for="breed" class="form-item">
-    Breed:
-    <input type="text" name="breed" value="{{breed}}">
+  <label for="country" class="form-item">
+    Country:
+    <input type="text" name="country" value="{{country}}">
   </label>
-  
-  <label for="owner" class="form-item">
-    Owner:
-    <input type="text" name="owner" value="{{owner}}">
+
+  <label for="currency" class="form-item">
+    Currency:
+    <input type="text" name="currency" value="{{currency}}">
+  </label>
+
+  <label for="language" class="form-item">
+    Language:
+    <input type="text" name="language" value="{{language}}">
+  </label>
+
+  <label for="description" class="form-item">
+    Description:
+    <input type="text" name="description" value="{{description}}">
   </label>
   
   <input type="hidden" name="image" value="{{image}}">

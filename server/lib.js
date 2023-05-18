@@ -9,7 +9,7 @@ async function getHome(req, res) {
         const data = JSON.parse(fileContent)
 
         const viewData = {
-            puppies: data.puppies,
+            places: data.places,
         }
         console.log(viewData)
         res.render('home', viewData)
@@ -19,79 +19,79 @@ async function getHome(req, res) {
 }
 
 
-async function getPuppyById(puppyId) {
+async function getPlaceById(placeId) {
   try {
     const filePath = path.join(__dirname, './data/data.json')
     const fileContent = await fs.readFile(filePath, 'utf-8')
     const data = JSON.parse(fileContent)
   
-    const puppy = data.puppies.find(puppy => puppy.id === puppyId)
+    const place = data.places.find(place => place.id === placeId)
   
-    return puppy
+    return place
   } catch (error) {
     console.error('Error reading data:', error)
     throw error
   }
 }
 
-async function renderPuppyDetails(req, res) {
+async function renderPlaceDetails(req, res) {
   try {
-    const puppyId = parseInt(req.params.id)
-    const puppy = await getPuppyById(puppyId)
+    const placeId = parseInt(req.params.id)
+    const place = await getPlaceById(placeId)
   
-    if (!puppy) {
-      res.send('Puppy not found')
+    if (!place) {
+      res.send('Place not found')
       return
     }
   
-    res.render('details', puppy)
+    res.render('details', place)
   } catch (error) {
     console.error('Error reading data:', error)
     res.send('Error reading data')
   }
 }
 
-async function renderEditPuppyForm(req, res) {
+async function renderEditPlaceForm(req, res) {
   try {
-    const puppyId = parseInt(req.params.id)
-    const puppy = await getPuppyById(puppyId)
+    const placeId = parseInt(req.params.id)
+    const place = await getPlaceById(placeId)
   
-    if (!puppy) {
-      res.send('Puppy not found')
+    if (!place) {
+      res.send('Place not found')
       return
     }
   
-    res.render('edit', puppy)
+    res.render('edit', place)
   } catch (error) {
     console.error('Error reading data:', error)
     res.send('Error reading data')
   }
 }
 
-async function updatePuppy(req, res) {
+async function updatePlace(req, res) {
   try {
-    const puppyId = parseInt(req.params.id)
-    const updatedPuppy = req.body
+    const placeId = parseInt(req.params.id)
+    const updatedPlace = req.body
 
     const filePath = path.join(__dirname, './data/data.json')
     const fileContent = await fs.readFile(filePath, 'utf-8')
     const data = JSON.parse(fileContent)
 
-    const puppyIndex = data.puppies.findIndex(puppy => puppy.id === puppyId)
+    const placeIndex = data.places.findIndex(place => place.id === placeId)
 
-    if (puppyIndex === -1) {
-      res.send('Puppy not found')
+    if (placeIndex === -1) {
+      res.send('Place not found')
       return
     }
 
-    data.puppies[puppyIndex] = {
-      ...data.puppies[puppyIndex],
-      ...updatedPuppy
+    data.places[placeIndex] = {
+      ...data.places[placeIndex],
+      ...updatedPlace
     }
 
     await fs.writeFile(filePath, JSON.stringify(data, null, 2))
 
-    res.redirect(`/puppies/${puppyId}`)
+    res.redirect(`/places/${placeId}`)
   } catch (error) {
     console.error('Error reading data:', error)
     res.send('Error reading data')
@@ -99,8 +99,8 @@ async function updatePuppy(req, res) {
 }
 
 module.exports = {
-  renderPuppyDetails,
-  renderEditPuppyForm,
-  updatePuppy,
+  renderPlaceDetails,
+  renderEditPlaceForm,
+  updatePlace,
   getHome
 }

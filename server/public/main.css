@@ -14,14 +14,14 @@ body {
   flex-direction: column;
 }
 
-.puppy-list {
+.place-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px;
 }
 
-.puppy {
+.place {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +33,7 @@ body {
   object-fit: cover;
   width: 230px;
   height: 230px;
+  margin-bottom: 30px;
 }
 
 .title {

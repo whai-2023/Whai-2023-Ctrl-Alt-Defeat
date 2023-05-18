@@ -2,7 +2,7 @@ const express = require('express')
 const hbs = require('express-handlebars')
 const fs = require('node:fs/promises')
 const path = require('path')
-const puppyRoutes = require('./routes/puppies')
+const placeRoutes = require('./routes/places')
 
 const server = express()
 
@@ -21,7 +21,7 @@ const lib = require('./lib')
 server.get('/', lib.getHome)
 
 
-server.use('/puppies', puppyRoutes)
+server.use('/places', placeRoutes)
 
 module.exports = server
 
