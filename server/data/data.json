@@ -1,7 +1,6 @@
 {
   "places": [
     {
-      "id": 1,
       "placeName": "Mathias",
       "country": "Fiji",
       "image": "/images/fiji-islands.jpeg",
@@ -10,7 +9,6 @@
       "description": "??????????????"
     },
     {
-      "id": 2,
       "placeName": "Renee",
       "country": "Greece",
       "image": "/images/navagio-beach.jpeg",
@@ -19,7 +17,6 @@
       "description": "??????????????"
     },
     {
-      "id": 3,
       "placeName": "Teri",
       "country": "New Zealand",
       "image": "/images/NZ-Queenstown.jpg",
@@ -28,7 +25,6 @@
       "description": "??????????????"
     },
     {
-      "id": 4,
       "placeName": "Euan",
       "country": "Indonesia",
       "image": "/images/Uluwatu.jpg",
@@ -37,7 +33,6 @@
       "description": "??????????????"
     },
     {
-      "id": 5,
       "placeName": "Entalula Island",
       "country": "Philippines",
       "image": "/images/PI.jpg",

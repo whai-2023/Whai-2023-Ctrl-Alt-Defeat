@@ -77,15 +77,10 @@ async function updatePlace(req, res) {
     const fileContent = await fs.readFile(filePath, 'utf-8')
     const data = JSON.parse(fileContent)
 
-    const placeIndex = data.places.findIndex(place => place.placeName === placeName)
+    const placeKey = data.places.find(place => place.placeName === placeName)
 
-    if (placeIndex === -1) {
-      res.send('Place not found')
-      return
-    }
-
-    data.places[placeIndex] = {
-      ...data.places[placeIndex],
+    data.places[placeKey] = {
+      ...data.places[placeKey],
       ...updatedPlace
     }
 
