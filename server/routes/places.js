@@ -3,10 +3,12 @@ const router = express.Router()
 const lib = require('../lib')
 
 
-router.get('/:id', lib.renderPlaceDetails)
+router.post('/:name/edit', lib.updatePlace)
 
-router.get('/:id/edit', lib.renderEditPlaceForm)
+router.get('/:name/edit', lib.renderEditPlaceForm)
 
-router.post('/:id/edit', lib.updatePlace)
+router.get('/:name', lib.renderPlaceDetails)
+
+
 
 module.exports = router

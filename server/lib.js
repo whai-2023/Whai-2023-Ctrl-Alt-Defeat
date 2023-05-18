@@ -19,13 +19,13 @@ async function getHome(req, res) {
 }
 
 
-async function getPlaceById(placeId) {
+async function getPlaceByName(placeName) {
   try {
     const filePath = path.join(__dirname, './data/data.json')
     const fileContent = await fs.readFile(filePath, 'utf-8')
     const data = JSON.parse(fileContent)
   
-    const place = data.places.find(place => place.id === placeId)
+    const place = data.places.find(place => place.placeName === placeName)
   
     return place
   } catch (error) {
@@ -36,8 +36,8 @@ async function getPlaceById(placeId) {
 
 async function renderPlaceDetails(req, res) {
   try {
-    const placeId = parseInt(req.params.id)
-    const place = await getPlaceById(placeId)
+    const placeName = req.params.name
+    const place = await getPlaceByName(placeName)
   
     if (!place) {
       res.send('Place not found')
@@ -53,8 +53,8 @@ async function renderPlaceDetails(req, res) {
 
 async function renderEditPlaceForm(req, res) {
   try {
-    const placeId = parseInt(req.params.id)
-    const place = await getPlaceById(placeId)
+    const placeName = req.params.name
+    const place = await getPlaceByName(placeName)
   
     if (!place) {
       res.send('Place not found')
@@ -70,28 +70,23 @@ async function renderEditPlaceForm(req, res) {
 
 async function updatePlace(req, res) {
   try {
-    const placeId = parseInt(req.params.id)
+    const placeName = req.params.name
     const updatedPlace = req.body
 
     const filePath = path.join(__dirname, './data/data.json')
     const fileContent = await fs.readFile(filePath, 'utf-8')
     const data = JSON.parse(fileContent)
 
-    const placeIndex = data.places.findIndex(place => place.id === placeId)
+    const placeKey = data.places.find(place => place.placeName === placeName)
 
-    if (placeIndex === -1) {
-      res.send('Place not found')
-      return
-    }
-
-    data.places[placeIndex] = {
-      ...data.places[placeIndex],
+    data.places[placeKey] = {
+      ...data.places[placeKey],
       ...updatedPlace
     }
 
     await fs.writeFile(filePath, JSON.stringify(data, null, 2))
 
-    res.redirect(`/places/${placeId}`)
+    res.redirect(`/places/${placeName}`)
   } catch (error) {
     console.error('Error reading data:', error)
     res.send('Error reading data')
