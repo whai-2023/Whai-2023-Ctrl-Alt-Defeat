@@ -1,7 +1,7 @@
 {
   "places": [
     {
-      "placeName": "Mathias",
+      "placeName": "plantation island",
       "country": "Fiji",
       "image": "/images/fiji-islands.jpeg",
       "currency": "Fijian Dollar",
@@ -39,6 +39,14 @@
       "currency": "Philippine Peso",
       "language": "Filipino",
       "description": "Entalula Island is one of the beautiful islands in the Bacuit Archipelago, which is part of the El Nido area. It features picturesque landscapes, white sandy beaches, and vibrant marine life, making it a popular spot for island hopping and snorkeling activities."
+    },
+    {
+      "placeName": "Mathias' & Martin's Favorite Place",
+      "country": "Mars",
+      "image": "/images/PI.jpg",
+      "currency": "Bacon",
+      "language": "Filipino",
+      "description": ""
     }
   ]
 }
