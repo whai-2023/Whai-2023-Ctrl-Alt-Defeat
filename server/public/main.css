@@ -61,3 +61,7 @@ body {
   font-size: 35px;
   margin-top: 0px;
 }
+
+#formPlaceName {
+  font-family: 'Spirax', cursive;
+}
