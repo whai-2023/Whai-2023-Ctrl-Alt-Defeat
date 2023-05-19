@@ -1,6 +1,14 @@
 body {
-  background-color: #68a5f5;
+  background-image: url('./images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Spirax', cursive;
+  color: rgb(12, 194, 185);
+  text-shadow:
+  -0.5px -0.5px 0 #000, 
+  0.5px -0.5px 0 #000, 
+  -0.5px 0.5px 0 #000, 
+  0.5px 0.5px 0 #000;
 }
 
 .container {
@@ -35,19 +43,31 @@ body {
   width: 400px;
   height: 400px;
   margin-bottom: 30px;
+  border: 2px solid rgb(75, 196, 190);
 }
 
 .title {
   text-align: center;
   font-size: 50px;
   margin-bottom: 10px;
+  color: rgb(12, 194, 185);
+  text-shadow:
+  -1px -1px 0 #000, 
+  1px -1px 0 #000, 
+  -1px 1px 0 #000, 
+  1px 1px 0 #000; 
 }
 
 .nav {
   text-align: center;
-  color: black;
+  color: rgb(12, 194, 185);
   font-size: 20px;
   margin-bottom: 20px;
+  text-shadow:
+  -1px -1px 0 #000, 
+  1px -1px 0 #000, 
+  -1px 1px 0 #000, 
+  1px 1px 0 #000; 
 }
 
 .form {
@@ -60,6 +80,11 @@ body {
 #where {
   font-size: 35px;
   margin-top: 0px;
+  text-shadow:
+  -1px -1px 0 #ffffff, 
+  1px -1px 0 #ffffff, 
+  -1px 1px 0 #ffffff, 
+  1px 1px 0 #ffffff;
 }
 
 #formPlaceName {
@@ -74,13 +99,14 @@ body {
 }
 
 header, footer {
-  
+
   text-align: center;
   margin-right: 450px;
   margin-left: 450px;
   font-size: 25px;
   font-family:cursive
 }
+
 .dscrpt {
   margin-right: 450px;
   margin-left: 450px;
