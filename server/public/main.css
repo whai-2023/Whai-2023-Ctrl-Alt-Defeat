@@ -5,10 +5,10 @@ body {
   font-family: 'Spirax', cursive;
   color: rgb(12, 194, 185);
   text-shadow:
-  -0.5px -0.5px 0 #ffffff, 
-  0.5px -0.5px 0 #ffffff, 
-  -0.5px 0.5px 0 #ffffff, 
-  0.5px 0.5px 0 #ffffff;
+  -0.5px -0.5px 0 #000, 
+  0.5px -0.5px 0 #000, 
+  -0.5px 0.5px 0 #000, 
+  0.5px 0.5px 0 #000;
 }
 
 .container {
@@ -80,6 +80,11 @@ body {
 #where {
   font-size: 35px;
   margin-top: 0px;
+  text-shadow:
+  -1px -1px 0 #ffffff, 
+  1px -1px 0 #ffffff, 
+  -1px 1px 0 #ffffff, 
+  1px 1px 0 #ffffff;
 }
 
 #formPlaceName {
@@ -91,4 +96,18 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+}
+
+header, footer {
+
+  text-align: center;
+  margin-right: 450px;
+  margin-left: 450px;
+  font-size: 25px;
+  font-family:cursive
+}
+
+.dscrpt {
+  margin-right: 450px;
+  margin-left: 450px;
 }
