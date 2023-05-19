@@ -16,10 +16,14 @@ server.engine('hbs', hbs.engine({ extname: 'hbs' }))
 server.set('view engine', 'hbs')
 server.set('views', __dirname + '/views')
 
+
+
+
+
+
 const lib = require('./lib')
 
 server.get('/', lib.getHome)
-
 
 server.use('/places', placeRoutes)
 
